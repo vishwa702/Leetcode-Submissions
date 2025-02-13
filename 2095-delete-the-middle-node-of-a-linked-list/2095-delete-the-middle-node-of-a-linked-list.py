@@ -11,7 +11,7 @@ class Solution:
         l, r = head, head.next
         
 
-        while r.next is not None and r.next.next is not None:
+        while r.next and r.next.next:
             r = r.next.next
             l = l.next
         
